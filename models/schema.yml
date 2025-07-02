@@ -1,0 +1,29 @@
+version: 2
+
+tables:
+  - name: RETAIL_SALES
+    description: "Tabela de vendas que contém informações sobre transações e produtos."
+    columns:
+      - name: TRANSACTION_ID
+        description: "ID único da transação de venda"
+      - name: CUSTOMER_ID
+        description: "ID único do cliente"
+      - name: PRODUCT_ID
+        description: "ID único do produto"
+      - name: PRODUCT_CATEGORY
+        description: "Categoria do produto"
+      - name: PRODUCT_NAME
+        description: "Nome do produto"
+      - name: SALE_DATE
+        description: "Data da venda"
+      - name: TOTAL_AMOUNT
+        description: "Valor total da transação"
+      - name: QUANTITY
+        description: "Quantidade de produtos vendidos"
+      - name: DISCOUNT
+        description: "Desconto aplicado na venda"
+      - name: PAYMENT_METHOD
+        description: "Método de pagamento utilizado (ex: cartão, dinheiro)"
+      - name: SALES_REGION
+        description: "Região onde a venda foi realizada"
+

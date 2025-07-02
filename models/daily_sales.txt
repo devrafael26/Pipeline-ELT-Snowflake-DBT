@@ -1,0 +1,10 @@
+-- models/daily_sales.sql
+WITH daily_sales AS (
+    SELECT
+        "DATE",
+        SUM("TOTAL_AMOUNT") AS total_sales
+    FROM {{ source('sales_data', 'SALES') }}
+    GROUP BY "DATE"
+)
+
+SELECT * FROM daily_sales
